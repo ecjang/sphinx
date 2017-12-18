@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Theme &mdash; Sphinx_tutorial 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Sphinx_tutorial 0.1 documentation" href="index.html"/>
+        <link rel="next" title="Reference" href="05_Refer.html"/>
+        <link rel="prev" title="Syntax" href="03_Syntax.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Sphinx_tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_intro.html">Introduce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_Module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_Syntax.html">Syntax</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Theme</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bulitin-theme">내장형 테마 (Bulitin Theme)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-theme">사용자 정의 테마 (Creating Theme)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_Refer.html">Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx_tutorial</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Theme</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/04_Theme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="theme">
+<h1>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bulitin-theme">
+<h2>내장형 테마 (Bulitin Theme)<a class="headerlink" href="#bulitin-theme" title="Permalink to this headline">¶</a></h2>
+<p>자체적으로 제공하는 테마</p>
+<p>스핑크스는 기본적으로 ‘alabaster’ 테마가 적용되어 있지만 자체적으로 제공하는 다른 테마들이 있다. <a class="reference external" href="http://www.sphinx-doc.org/en/stable/theming.html">관련 홈페이지</a> 에서 확인 할 수 있다.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>스핑크스 홈페이지 : <a class="reference external" href="http://www.sphinx-doc.org/en/stable/theming.html">http://www.sphinx-doc.org/en/stable/theming.html</a></li>
+</ul>
+</div>
+<img alt="_images/theme.png" src="_images/theme.png" />
+<p>conf.py 파일을 편집기로 열고 <code class="docutils literal"><span class="pre">html_theme</span></code> 를 검색하여 원하는 테마로 수정하면 적용됨.</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span>
+<span class="c1"># -- Options for HTML output ----------------------------------------------</span>
+
+<span class="c1"># The theme to use for HTML and HTML Help pages.  See the documentation for</span>
+<span class="hll"><span class="c1"># a list of builtin themes.</span>
+</span><span class="c1">#</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="creating-theme">
+<h2>사용자 정의 테마 (Creating Theme)<a class="headerlink" href="#creating-theme" title="Permalink to this headline">¶</a></h2>
+<p>다른 사용자가 제작한 테마를 다운받아 사용. <a href="#id2"><span class="problematic" id="id3">``</span></a>sphinx theme``를 검색하면 다양한 스핑크스 테마를 검색 가능.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>스핑크스 테마 모음 : <a class="reference external" href="http://www.writethedocs.org/guide/tools/sphinx-themes/">http://www.writethedocs.org/guide/tools/sphinx-themes/</a></li>
+</ul>
+</div>
+<img alt="_images/theme2.png" src="_images/theme2.png" />
+<p>pip 명령어로 해당 테마를 설치한 후 conf.py에서 다운 받은 테마를 지정해서 적용하는 방식.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>sphinx_bootstrap_theme 테마 설치 시</li>
+<li>테마 설치 :  pip install sphinx_bootstrap_theme</li>
+<li>테마 적용 : conf.py 파일을 수정</li>
+<li>상단에 <code class="docutils literal"><span class="pre">import</span> <span class="pre">sphinx_bootstrap_theme</span></code></li>
+<li>중간부분에 <code class="docutils literal"><span class="pre">html_theme</span> <span class="pre">=</span> <span class="pre">'bootstrap'</span></code></li>
+<li>중간부분에 <code class="docutils literal"><span class="pre">html_theme_path</span> <span class="pre">=</span> <span class="pre">sphinx_bootstrap_theme.get_html_theme_path()</span></code></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="05_Refer.html" class="btn btn-neutral float-right" title="Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="03_Syntax.html" class="btn btn-neutral" title="Syntax" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, JEC.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

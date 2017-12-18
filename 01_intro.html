@@ -1,0 +1,536 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduce &mdash; Sphinx_tutorial 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Sphinx_tutorial 0.1 documentation" href="index.html"/>
+        <link rel="next" title="Module" href="02_Module.html"/>
+        <link rel="prev" title="Welcome to Sphinx_tutorial’s documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Sphinx_tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduce</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">01. 스핑크스란?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">02. 스핑크스 설치</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">03. 기본 문서 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">04. 생성된 문서 확인.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#html">05. HTML 생성</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">05. 루트 인덱스 문서 실행</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">06. 테마 적용</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_Module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_Syntax.html">Syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_Theme.html">Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_Refer.html">Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx_tutorial</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduce</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/01_intro.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduce">
+<h1>Introduce<a class="headerlink" href="#introduce" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>01. 스핑크스란?<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>스핑크스는 문서를 쉽게 생성할 수 있는 툴로써 다음과 같은 특징이 있다.</p>
+<ol class="arabic simple">
+<li><strong>출력 포맷</strong> : HTML, LaTaX, ePub, 텍스트 정보, 설명서, 계획서</li>
+<li><strong>다양한 상호참조</strong> : 기능, 인용, 용어집 등을 위한 시멘틱 마크업, 자동 링크.</li>
+<li><strong>계층 구조</strong> : 문서를 쉽게 생성할 수 있고 자동으로 링크됨.</li>
+<li><strong>코드 핸들링</strong> : 자동 하이라이팅 기능</li>
+<li><strong>확장성</strong> : 문서에 파이썬 코드를 추가하거나 로딩 가능.</li>
+<li><strong>기여</strong> : PyPI를 통해 다양한 다양한 기능들 추가 가능.</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>02. 스핑크스 설치<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>cmd 창을 열고 <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx</span></code> 명령을 입력하고 실행.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>설치 : pip install sphinx</li>
+<li>삭제 : pip uninstall sphinx</li>
+</ul>
+</div>
+<a class="reference internal image-reference" href="_images/install.png"><img alt="_images/install.png" src="_images/install.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>03. 기본 문서 만들기<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>cmd 창에서 원하는 폴더로 이동후 <code class="docutils literal"><span class="pre">sphinx-quickstart</span></code> 명령을 실행.
+문서를 생성하기 위한 몇 가지 질문들이 나오고 원하는 값을 입력. [ ]의 값은 기본값이며 엔터를 치면 기본값이 입력됨.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>문서 만들기 : shpinx-quickstart</li>
+</ul>
+</div>
+<a class="reference internal image-reference" href="_images/start00.png"><img alt="_images/start00.png" src="_images/start00.png" style="width: 500px;" /></a>
+<dl class="docutils">
+<dt>Root path for the documentation [.]</dt>
+<dd><ul class="first last simple">
+<li>루트 디렉토리 지정, 입력값이 없으면 현제 폴더에 생성.</li>
+<li>Sphinx_Tutorial (Sphinx_Tutorial 폴더를 루트로 지정)</li>
+</ul>
+</dd>
+<dt>Separate source and build directories (y/n) [n]</dt>
+<dd><ul class="first last simple">
+<li>별도의 소스, 빌드 디렉토리 생성</li>
+<li>n (한 폴더에 빌드와 소스 폴더가 생성.)</li>
+</ul>
+</dd>
+<dt>Name prefix for templates and static dir [_]</dt>
+<dd><ul class="first last simple">
+<li>static 폴더의 접두사를 정함.</li>
+<li>_(static 폴더 앞에 _이 붙어 _static이 된다.)</li>
+</ul>
+</dd>
+<dt>Project name:</dt>
+<dd><ul class="first last simple">
+<li>프로젝트 이름을 정함</li>
+<li>Sphinx_tutorial</li>
+</ul>
+</dd>
+<dt>Author name(s):</dt>
+<dd><ul class="first last simple">
+<li>저자 이름</li>
+<li>JEC</li>
+</ul>
+</dd>
+<dt>Project version []:</dt>
+<dd><ul class="first last simple">
+<li>버젼 설정</li>
+<li>0.1 (버전을 0.1로 설정)</li>
+</ul>
+</dd>
+<dt>Project release [0.1]:</dt>
+<dd><ul class="first last simple">
+<li>릴리즈 버젼을 설정</li>
+<li>0.1 (릴리즈 버젼을 0.1로 설정)</li>
+</ul>
+</dd>
+<dt>Project language [en]:</dt>
+<dd><ul class="first last simple">
+<li>프로젝트 주 사용 언어 설정</li>
+<li>en (영어를 주언어로 설정)</li>
+</ul>
+</dd>
+<dt>Source file suffix</dt>
+<dd><ul class="first last simple">
+<li>소스 파일의 확장자를 설정</li>
+<li>rst (확장자를 rst로 설정)</li>
+</ul>
+</dd>
+<dt>Name of your master document (without suffix) [index]:</dt>
+<dd><ul class="first last simple">
+<li>마스터 문서의 이름을 설정</li>
+<li>index (마스터 문서 이름이 index로 설정)</li>
+</ul>
+</dd>
+<dt>Do you want to use the epub builder (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>ePub 빌더 사용 여부 결정</li>
+<li>n</li>
+</ul>
+</dd>
+<dt>autodoc: automatically insert docstrings from modules (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>자동으로 모듈에서 문자 삽입</li>
+<li>y (인덱스에서 모듈명 입력시 자동으로 모듈을 생성)</li>
+</ul>
+</dd>
+<dt>doctest: automatically test code snippets in doctest blocks (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>자동으로 코드 발췌를 사용</li>
+<li>n</li>
+</ul>
+</dd>
+<dt>intersphinx: link between Sphinx documentation of different projects (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>다른 스핑크스 문서끼리 연결</li>
+<li>y</li>
+</ul>
+</dd>
+<dt>todo: write “todo” entries that can be shown or hidden on build (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>todo를 보여줄 지 결정</li>
+<li>n</li>
+</ul>
+</dd>
+<dt>coverage: checks for documentation coverage (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>문서 커버리지 검사</li>
+<li>n</li>
+</ul>
+</dd>
+<dt>imgmath: include math, rendered as PNG or SVG images (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>PNG와 SVG를 위한 math, rendered를 첨부</li>
+<li>y</li>
+</ul>
+</dd>
+<dt>mathjax: include math, rendered in the browser by MathJax (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>브라우저에 MathJax로 math, rendered를 첨부</li>
+<li>n</li>
+</ul>
+</dd>
+<dt>ifconfig: conditional inclusion of content based on config values (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>설정값을 기준으로 조건부를 포함.</li>
+<li>n</li>
+</ul>
+</dd>
+<dt>viewcode: include links to the source code of documented Python objects (y/n) [n]:</dt>
+<dd><ul class="first last simple">
+<li>파이썬 객체 문서의 링크를 포함.</li>
+<li>n</li>
+</ul>
+</dd>
+<dt>githubpages: create .nojekyll file to publish the document on GitHub pages (y/n)</dt>
+<dd><ul class="first last simple">
+<li>깃허브에서 출력가능한 nojekyll 파일을 만듬</li>
+<li>n</li>
+</ul>
+</dd>
+<dt>Create Makefile? (y/n) [y]:</dt>
+<dd><ul class="first last simple">
+<li>make 파일을 생성</li>
+<li>y (make 파일을 간편하게 빌드 가능)</li>
+</ul>
+</dd>
+<dt>Create Windows command file? (y/n) [y]:</dt>
+<dd><ul class="first last simple">
+<li>윈도우 명령 파일을 생성</li>
+<li>y</li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>04. 생성된 문서 확인.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>위 설정을 완료하면 Sphinx_Tutorial 폴더가 생성됨.</p>
+<a class="reference internal image-reference" href="_images/start01.png"><img alt="_images/start01.png" src="_images/start01.png" style="width: 500px;" /></a>
+<p>생성된 폴더에는 아래처럼 구성되 있음.</p>
+<a class="reference internal image-reference" href="_images/rootfolder.png"><img alt="_images/rootfolder.png" src="_images/rootfolder.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="html">
+<h2>05. HTML 생성<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h2>
+<p>cmd에서 루트 폴더로 이동후 <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code> 명령 실행. conf.py 내용을 기반으로 html을 생성. 생성되는 경로는 ‘_bulid’ 폴더 안의 ‘html’ 폴더에 생성됨.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>root 폴더로 이동후 make html</li>
+<li>앞으로 문서를 수정하면 make html 명령을 실행해서 수정된 내용을 적용</li>
+</ul>
+</div>
+<ul class="simple">
+<li>HTML 문서를 생성하는 과정</li>
+</ul>
+<a class="reference internal image-reference" href="_images/make_html.png"><img alt="_images/make_html.png" src="_images/make_html.png" style="width: 500px;" /></a>
+<ul class="simple">
+<li>생성된 HTML 문서들</li>
+</ul>
+<a class="reference internal image-reference" href="_images/make_html02.png"><img alt="_images/make_html02.png" src="_images/make_html02.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>05. 루트 인덱스 문서 실행<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>_bulid 폴더 안의 html 폴더 안에 index.html을 실행시 메인 페이지가 열림. 인터넷 브라우저로 실행 가능.</p>
+<ul class="simple">
+<li>처음 실행하는 인덱스 페이지</li>
+</ul>
+<a class="reference internal image-reference" href="_images/index.png"><img alt="_images/index.png" src="_images/index.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>06. 테마 적용<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Sphinx에서 자체적으로 제공하는 테마가 있지만 여기서는 ‘Read the Docs Sphinx Theme’ 테마를 적용함.</p>
+<a class="reference internal image-reference" href="_images/rtd_theme.png"><img alt="_images/rtd_theme.png" src="_images/rtd_theme.png" style="width: 500px;" /></a>
+<p><a class="reference external" href="https://github.com/rtfd/sphinx_rtd_theme/">sphinx_rtd_theme Git Hub</a>.</p>
+<p>적용할 테마를 다운받아 설치하기 위해 cmd 창에 <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx_rtd_threme</span></code> 실행한다.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>설치 : pip install sphinx_rtd_threme</li>
+<li>삭제 : pip uninstall sphinx_rtd_threme</li>
+</ul>
+</div>
+<a class="reference internal image-reference" href="_images/rtd_install.png"><img alt="_images/rtd_install.png" src="_images/rtd_install.png" style="width: 500px;" /></a>
+<p>루트 디렉토리에서 conf.py 파일을 에디터로 열고 아래와 같이 수정.</p>
+<blockquote>
+<div><ul class="simple">
+<li>상단에 <code class="docutils literal"><span class="pre">import</span> <span class="pre">sphinx_rtd_theme</span></code> 추가하여 테마를 불러옴.</li>
+<li>중간부분에 <code class="docutils literal"><span class="pre">html_theme=&quot;sphinx_rtd_theme&quot;</span></code> 으로 수정하여 테마를 지정.</li>
+<li>그리고 <code class="docutils literal"><span class="pre">html_theme_path</span> <span class="pre">=</span> <span class="pre">[sphinx_rtd_theme.get_html_theme_path()]</span></code> 추가해서 경로를 지정해줌.</li>
+</ul>
+</div></blockquote>
+<p>루트 디렉토리의 conf.py 파일 수정</p>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="hll"><span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
+</span>
+<span class="c1"># sys.path.insert(0, os.path.abspath(&#39;.&#39;))</span>
+
+</pre></div>
+</td></tr></table></div>
+<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># a list of builtin themes.</span>
+<span class="c1">#</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+<span class="hll">
+</span><span class="c1"># Theme options are theme-specific and customize the look and feel of a theme</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_rtd_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()]</span>
+<span class="hll">
+</span><span class="c1"># further.  For a list of options available for each theme, see the</span>
+<span class="c1"># documentation.</span>
+<span class="c1">#</span>
+</pre></div>
+</td></tr></table></div>
+<p>수정하고 cmd창에서 <a href="#id7"><span class="problematic" id="id8">``</span></a>make html``로 빌드를 실행. 그리고 _bulid/html의 index.html을 실행하면 수정된 테마를 확인 가능.</p>
+<a class="reference internal image-reference" href="_images/rtd_index.png"><img alt="_images/rtd_index.png" src="_images/rtd_index.png" style="width: 500px;" /></a>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="02_Module.html" class="btn btn-neutral float-right" title="Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to Sphinx_tutorial’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, JEC.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

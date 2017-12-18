@@ -1,0 +1,754 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Syntax &mdash; Sphinx_tutorial 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Sphinx_tutorial 0.1 documentation" href="index.html"/>
+        <link rel="next" title="Theme" href="04_Theme.html"/>
+        <link rel="prev" title="Module" href="02_Module.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Sphinx_tutorial
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_intro.html">Introduce</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_Module.html">Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Syntax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#title">01. 타이틀 Title</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">서브색션1 제목</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">서브색션2 제목</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#inline-markup">02. 인라인 마크업 Inline Markup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#list">03. 리스트 List</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bullet-lists">기호형 리스트 (Bullet Lists)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enumerated-lists">숫자형 리스트 (Enumerated Lists)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#definition-lists">정의형 리스트 (Definition Lists)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#field-lists">필드 리스트 (Field Lists)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#option-lists">옵션 리스트 (Option Lists)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hlist-directive">칼럼 나누기 (hlist directive)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#blocks">04. 블럭 Blocks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#literal-block">문자 블럭 (Literal Block)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#line-block">라인 블럭 (Line Block)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#doctest-block">대화형 블럭 (Doctest Block)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#table">04. 테이블 Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#grid-table">그리드 테이블 (Grid Table)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#simple-table">심플 테이블 (Simple Table)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#comments">05. 주석 Comments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#image">06. 이미지 Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#box">07. 박스 Box</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#see-also">참고 See Also</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#note">노트 Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#warning">알림 Warning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="04_Theme.html">Theme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_Refer.html">Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx_tutorial</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Syntax</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/03_Syntax.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="syntax">
+<h1>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">==============</span>
+<span class="n">Syntax</span>
+<span class="o">==============</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="title">
+<h2>01. 타이틀 Title<a class="headerlink" href="#title" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mf">01.</span> <span class="n">타이틀</span>
+<span class="o">----------------</span>
+</pre></div>
+</div>
+<p>5가지 타이틀을 사용 가능. 타이틀의 내용보다 길게 써주어야 함.</p>
+<ol class="arabic simple">
+<li><code class="docutils literal"><span class="pre">========x2</span></code> : 문서의 타이틀에 사용.</li>
+<li><code class="docutils literal"><span class="pre">-------------</span></code> : 색션에 사용.</li>
+<li><code class="docutils literal"><span class="pre">^^^^^^^^</span></code> : 보조색션에 사용.</li>
+<li><code class="docutils literal"><span class="pre">~~~~~~~~</span></code> : 보조색션으로 사용.</li>
+<li><code class="docutils literal"><span class="pre">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span></code> : 단락으로 사용.</li>
+</ol>
+<div class="section" id="id1">
+<h3>서브색션1 제목<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">서브색션1</span> <span class="n">제목</span>
+<span class="o">^^^^^^^^^^^^^^^^^</span>
+</pre></div>
+</div>
+<div class="section" id="id2">
+<h4>서브색션2 제목<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">서브색션2</span> <span class="n">제목</span>
+<span class="o">~~~~~~~~~~~~~~~~~</span>
+</pre></div>
+</div>
+<div class="section" id="id3">
+<h5>단락 제목<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">단락</span> <span class="n">제목</span>
+<span class="sd">&quot;&quot;&quot;&quot;&quot;&quot;</span><span class="s2">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="inline-markup">
+<h2>02. 인라인 마크업 Inline Markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h2>
+<p>굵게, 이택릭체 등 문자의 스타일 및 하이퍼링크 기능을 추가가능.
+` 기호는 1옆에 있는 키(그래이브)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">1. 이탈릭체:</th><td class="field-body"><em>이탈릭체</em>,  <code class="docutils literal"><span class="pre">*이탈릭체*</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">2. 굵은글씨:</th><td class="field-body"><strong>굵은글씨</strong>, <code class="docutils literal"><span class="pre">**굵은글씨**</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">3. 해석된 글자:</th><td class="field-body"><cite>해석된 글자</cite>,  <code class="docutils literal"><span class="pre">`해석된</span> <span class="pre">글자`</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">4. 고정폭 글자:</th><td class="field-body"><code class="docutils literal"><span class="pre">고정폭</span> <span class="pre">글자</span></code>, <code class="docutils literal"><span class="pre">``고정폭</span> <span class="pre">글자``</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">5. 하이퍼링크1:</th><td class="field-body"><a class="reference external" href="http://www.python.org/">하이퍼링크1</a> , <code class="docutils literal"><span class="pre">`하이퍼링크1</span> <span class="pre">&lt;http://www.python.org/&gt;`</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">6. 하이퍼링크2:</th><td class="field-body"><a class="reference external" href="http://www.python.org/">하이퍼링크2</a> , <code class="docutils literal"><span class="pre">하이퍼링크2_</span>&#160; <span class="pre">/</span>&#160; <span class="pre">..</span> <span class="pre">_하이퍼링크2:</span> <span class="pre">http://www.python.org/</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">7. 하이퍼링크3:</th><td class="field-body"><a href="#id23"><span class="problematic" id="id24">`02. 인라인 마크업`_</span></a> , <code class="docutils literal"><span class="pre">`02.</span> <span class="pre">인라인</span> <span class="pre">마크업`</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">8. 하이퍼링크4:</th><td class="field-body"><a class="reference external" href="http://www.python.org/">http://www.python.org/</a> , <code class="docutils literal"><span class="pre">http://www.python.org/</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">9. 참조1:</th><td class="field-body">참조번호 <a class="footnote-reference" href="#id10" id="id5">[1]</a> , <code class="docutils literal"><span class="pre">참조번호</span> <span class="pre">[1]_</span>&#160; <span class="pre">/</span>&#160; <span class="pre">..[1]</span> <span class="pre">설명</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">10. 참조2:</th><td class="field-body">참조자동번호 <a class="footnote-reference" href="#id11" id="id6">[2]</a> , <code class="docutils literal"><span class="pre">참조자동번호</span> <span class="pre">[#]_</span>&#160; <span class="pre">/</span>&#160; <span class="pre">..[#]</span> <span class="pre">설명</span></code></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">11. 참조3:</th><td class="field-body">참조자동기호 <a class="footnote-reference" href="#id12" id="id7">[*]</a> ,  <code class="docutils literal"><span class="pre">참조자동기호</span> <span class="pre">[*]_</span>&#160; <span class="pre">/</span>&#160; <span class="pre">..[*]</span> <span class="pre">설명</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">12. 참조4:</th><td class="field-body">참조기호 <a class="reference internal" href="#id13" id="id8">[기호1]</a> , <code class="docutils literal"><span class="pre">참조기호</span> <span class="pre">[기호1]_</span>&#160; <span class="pre">/</span>&#160; <span class="pre">..[기호1]</span> <span class="pre">설명</span></code></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[1]</a></td><td>참조번호1에 대한 설명입니다.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id11" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[2]</a></td><td>참조자동번호에 대한 설명입니다.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id12" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[*]</a></td><td>참조자동기호에 대한 설명입니다.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="id13" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id8">[기호1]</a></td><td>참조기호에 대한 설명입니다.</td></tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="list">
+<h2>03. 리스트 List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bullet-lists">
+<h3>기호형 리스트 (Bullet Lists)<a class="headerlink" href="#bullet-lists" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">-,</span> <span class="pre">+,</span> <span class="pre">*</span></code> 기호를 사용.</p>
+<ul class="simple">
+<li>첫번째 내용 : <code class="docutils literal"><span class="pre">-</span> <span class="pre">첫번째</span> <span class="pre">내용</span></code></li>
+</ul>
+<ul class="simple">
+<li>두번째 내용 : <code class="docutils literal"><span class="pre">+</span> <span class="pre">두번째</span> <span class="pre">내용</span></code></li>
+</ul>
+<ul class="simple">
+<li>세번째 내용 :  <code class="docutils literal"><span class="pre">*</span> <span class="pre">세번째</span> <span class="pre">내용</span></code></li>
+</ul>
+</div>
+<div class="section" id="enumerated-lists">
+<h3>숫자형 리스트 (Enumerated Lists)<a class="headerlink" href="#enumerated-lists" title="Permalink to this headline">¶</a></h3>
+<p>숫자, <code class="docutils literal"><span class="pre">#</span></code> 기호를 사용.</p>
+<ol class="arabic simple">
+<li>첫번째 내용 : <code class="docutils literal"><span class="pre">1.</span> <span class="pre">첫번째</span> <span class="pre">내용</span></code></li>
+<li>두번째 내용 : <code class="docutils literal"><span class="pre">#.</span> <span class="pre">두번째</span> <span class="pre">내용</span></code></li>
+<li>세번째 내용 : <code class="docutils literal"><span class="pre">#.</span> <span class="pre">세번째</span> <span class="pre">내용</span></code></li>
+</ol>
+</div>
+<div class="section" id="definition-lists">
+<h3>정의형 리스트 (Definition Lists)<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h3>
+<p>용어와 정의를 연관시키는 리스트, 들여쓰기로 표현</p>
+<dl class="docutils">
+<dt>용어1</dt>
+<dd>용어1에 대한 설명입니다.</dd>
+<dt>용어2</dt>
+<dd>용어2에 대한 설명입니다.</dd>
+</dl>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">용어1</span>
+        <span class="n">용어1에</span> <span class="n">대한</span> <span class="n">설명입니다</span><span class="o">.</span>
+<span class="n">용어2</span>
+        <span class="n">용어2에</span> <span class="n">대한</span> <span class="n">설명입니다</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="field-lists">
+<h3>필드 리스트 (Field Lists)<a class="headerlink" href="#field-lists" title="Permalink to this headline">¶</a></h3>
+<p>2열 테이블 구조로 사용. 지시어나 옵션 설명으로 사용</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">옵션1:</th><td class="field-body">옵션1에 대한 설명입니다.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">옵션2:</th><td class="field-body">옵션2에 대한 설명입니다.</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">:</span><span class="n">용어1</span><span class="p">:</span> <span class="n">용어1에</span> <span class="n">대한</span> <span class="n">설명입니다</span><span class="o">.</span>
+<span class="p">:</span><span class="n">용어2</span><span class="p">:</span>
+        <span class="n">용어2에</span> <span class="n">대한</span> <span class="n">설명입니다</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="option-lists">
+<h3>옵션 리스트 (Option Lists)<a class="headerlink" href="#option-lists" title="Permalink to this headline">¶</a></h3>
+<p>옵션과 설명사이에 2개 이상의 공백이 있어야 함. 옵션에 오는 단어는 영문이어야 가능.</p>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-O<var>ption1</var></span></kbd></td>
+<td>옵션1에 대한 설명.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-O<var>ption2</var></span></kbd></td>
+<td>옵션2에 대한 설명.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-O<var>ption3</var></span></kbd></td>
+<td>옵션3에 대한 설명.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hlist-directive">
+<h3>칼럼 나누기 (hlist directive)<a class="headerlink" href="#hlist-directive" title="Permalink to this headline">¶</a></h3>
+<p>리스트에 칼럼을 적용.</p>
+<table class="hlist"><tr><td><ul class="simple">
+<li>첫번째</li>
+<li>두번째</li>
+</ul>
+</td><td><ul class="simple">
+<li>세번째</li>
+<li>네번째</li>
+</ul>
+</td><td><ul class="simple">
+<li>다섯번째</li>
+</ul>
+</td></tr></table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="blocks">
+<h2>04. 블럭 Blocks<a class="headerlink" href="#blocks" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="literal-block">
+<h3>문자 블럭 (Literal Block)<a class="headerlink" href="#literal-block" title="Permalink to this headline">¶</a></h3>
+<p>문자를 그대로 출력하며 <a href="#id14"><span class="problematic" id="id15">``</span></a>::<a href="#id16"><span class="problematic" id="id17">``</span></a>기호를 사용한다.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">::</span><span class="n">을</span> <span class="n">사용하면</span> <span class="n">문자가</span> <span class="n">그대로</span> <span class="n">출력됩니다</span><span class="o">.</span>
+<span class="p">::</span><span class="n">기호</span> <span class="n">사용후</span> <span class="n">한줄</span> <span class="n">띄운</span> <span class="n">후</span> <span class="n">사용</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="line-block">
+<h3>라인 블럭 (Line Block)<a class="headerlink" href="#line-block" title="Permalink to this headline">¶</a></h3>
+<p>파이프문자 <code class="docutils literal"><span class="pre">|</span></code> 를 사용하여 한줄씩 작성 가능.</p>
+<div class="line-block">
+<div class="line">파이프문자를 사용하면 한 줄 씩 입력할 수 있다.</div>
+<div class="line"><br /></div>
+<div class="line">중간에 공백 생성도 가능.</div>
+<div class="line-block">
+<div class="line">들여쓰기로 작성 가능.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">|</span> <span class="n">파이프문자를</span> <span class="n">사용하면</span> <span class="n">한</span> <span class="n">줄</span> <span class="n">씩</span> <span class="n">입력할</span> <span class="n">수</span> <span class="n">있다</span><span class="o">.</span>
+<span class="o">|</span>
+<span class="o">|</span> <span class="n">중간에</span> <span class="n">공백</span> <span class="n">생성도</span> <span class="n">가능</span><span class="o">.</span>
+<span class="o">|</span>               <span class="n">들여쓰기로</span> <span class="n">작성</span> <span class="n">가능</span><span class="o">.</span>
+<span class="o">|</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="doctest-block">
+<h3>대화형 블럭 (Doctest Block)<a class="headerlink" href="#doctest-block" title="Permalink to this headline">¶</a></h3>
+<p>상호작용하는 파이썬 세션으로 Doctest를 사용할 수 있다.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">&#39;Doctest 블럭입니다.&#39;</span>
+<span class="go">Doctest 블럭입니다.</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="table">
+<h2>04. 테이블 Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-,</span> <span class="pre">+,</span> <span class="pre">=</span></code> 기호를 사용하며 테이블을 생성할 수 있다. 그리드 형식과 간단한 형식이 있는데 간단한 형식의 경우 구현에 제한이 있다.</p>
+<div class="section" id="grid-table">
+<h3>그리드 테이블 (Grid Table)<a class="headerlink" href="#grid-table" title="Permalink to this headline">¶</a></h3>
+<p>각 내용의 크기에 맞추어 기호를 배치해서 생성. 만들기 어렵지만 사용자의 의도대로 제작 가능.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="34%" />
+<col width="31%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header 1</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1</td>
+<td>column 2</td>
+<td>column 3</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td colspan="2">Cells may span columns.</td>
+</tr>
+<tr class="row-even"><td>body row 3</td>
+<td rowspan="2">Cells may
+span rows.</td>
+<td rowspan="2"><ul class="first last simple">
+<li>Cells</li>
+<li>contain</li>
+<li>blocks.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>body row 4</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">+------------+------------+-----------+</span>
+<span class="o">|</span> <span class="n">Header</span> <span class="mi">1</span>   <span class="o">|</span> <span class="n">Header</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">Header</span> <span class="mi">3</span>  <span class="o">|</span>
+<span class="o">+============+============+===========+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">1</span> <span class="o">|</span> <span class="n">column</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">column</span> <span class="mi">3</span>  <span class="o">|</span>
+<span class="o">+------------+------------+-----------+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">Cells</span> <span class="n">may</span> <span class="n">span</span> <span class="n">columns</span><span class="o">.|</span>
+<span class="o">+------------+------------+-----------+</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">Cells</span> <span class="n">may</span>  <span class="o">|</span> <span class="o">-</span> <span class="n">Cells</span>   <span class="o">|</span>
+<span class="o">+------------+</span> <span class="n">span</span> <span class="n">rows</span><span class="o">.</span> <span class="o">|</span> <span class="o">-</span> <span class="n">contain</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">body</span> <span class="n">row</span> <span class="mi">4</span> <span class="o">|</span>            <span class="o">|</span> <span class="o">-</span> <span class="n">blocks</span><span class="o">.</span> <span class="o">|</span>
+<span class="o">+------------+------------+-----------+</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="simple-table">
+<h3>심플 테이블 (Simple Table)<a class="headerlink" href="#simple-table" title="Permalink to this headline">¶</a></h3>
+<p>각 내용의 크기에 맞추어 기호를 배치해서 생성. 만들기 어렵지만 사용자의 의도대로 제작 가능.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="31%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Inputs</th>
+<th class="head">Output</th>
+</tr>
+<tr class="row-even"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A or B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="row-odd"><td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+   <span class="n">Inputs</span>     <span class="n">Output</span>
+<span class="o">------------</span>  <span class="o">------</span>
+  <span class="n">A</span>      <span class="n">B</span>    <span class="n">A</span> <span class="ow">or</span> <span class="n">B</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+<span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>
+<span class="kc">True</span>   <span class="kc">False</span>  <span class="kc">True</span>
+<span class="kc">False</span>  <span class="kc">True</span>   <span class="kc">True</span>
+<span class="kc">True</span>   <span class="kc">True</span>   <span class="kc">True</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>05. 주석 Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id18"><span class="problematic" id="id19">``</span></a>.. `` 을 사용하면 주석 입력 가능.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">기호를</span> <span class="n">앞에</span> <span class="n">붙히면</span> <span class="n">내용이</span> <span class="n">표시되지</span> <span class="n">않는다</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="image">
+<h2>06. 이미지 Image<a class="headerlink" href="#image" title="Permalink to this headline">¶</a></h2>
+<p>이미지의 경로를 입력하면 해당 경로의 이미지를 불러온다.
+<a href="#id20"><span class="problematic" id="id21">``</span></a>.. image:: 이미지 경로 `` 형식으로 사용.
+width, height, align 등의 옵션 사용 가능.</p>
+<img alt="_images/sphinx-logo.png" src="_images/sphinx-logo.png" />
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="n">image</span><span class="o">/</span><span class="n">sphinx</span><span class="o">-</span><span class="n">logo</span><span class="o">.</span><span class="n">png</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="_images/sphinx-logo.png"><img alt="Logo" class="align-center" src="_images/sphinx-logo.png" style="width: 200px; height: 100px;" /></a>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">image</span><span class="p">::</span> <span class="n">image</span><span class="o">/</span><span class="n">sphinx</span><span class="o">-</span><span class="n">logo</span><span class="o">.</span><span class="n">png</span>
+<span class="p">:</span><span class="n">width</span><span class="p">:</span> <span class="mi">300</span><span class="n">px</span>
+<span class="p">:</span><span class="n">height</span><span class="p">:</span> <span class="mi">100</span><span class="n">px</span>
+<span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">left</span>
+<span class="p">:</span><span class="n">alt</span><span class="p">:</span> <span class="n">Logo</span>
+</pre></div>
+</div>
+<div class="align-center figure" id="id22">
+<a class="reference internal image-reference" href="_images/sphinx-logo.png"><img alt="logo" src="_images/sphinx-logo.png" style="width: 300px; height: 150px;" /></a>
+<p class="caption"><span class="caption-text">이미지에 추가 설명을 넣을 수 있다.</span></p>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>    <span class="o">..</span> <span class="n">figure</span><span class="p">::</span> <span class="n">image</span><span class="o">/</span><span class="n">sphinx</span><span class="o">-</span><span class="n">logo</span><span class="o">.</span><span class="n">png</span>
+<span class="p">:</span><span class="n">width</span><span class="p">:</span> <span class="mi">300</span><span class="n">px</span>
+<span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span>
+<span class="p">:</span><span class="n">height</span><span class="p">:</span> <span class="mi">150</span><span class="n">px</span>
+<span class="p">:</span><span class="n">alt</span><span class="p">:</span> <span class="n">logo</span>
+<span class="p">:</span><span class="n">figclass</span><span class="p">:</span> <span class="n">align</span><span class="o">-</span><span class="n">center</span>
+<span class="n">이미지에</span> <span class="n">추가</span> <span class="n">설명을</span> <span class="n">넣을</span> <span class="n">수</span> <span class="n">있다</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>이미지를 테이블에 넣을 수 있다.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="_images/icon01.png"><img alt="icon01" class="align-middle" src="_images/icon01.png" style="width: 114.0px; height: 102.0px;" /></a></td>
+<td><a class="reference internal" href="_images/icon02.png"><img alt="icon02" class="align-middle" src="_images/icon02.png" style="width: 114.0px; height: 102.0px;" /></a></td>
+<td><a class="reference internal" href="_images/icon03.png"><img alt="icon03" class="align-middle" src="_images/icon03.png" style="width: 114.0px; height: 102.0px;" /></a></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="_images/icon04.png"><img alt="icon04" class="align-middle" src="_images/icon04.png" style="width: 114.0px; height: 102.0px;" /></a></td>
+<td><a class="reference internal" href="_images/icon05.png"><img alt="icon05" class="align-middle" src="_images/icon05.png" style="width: 114.0px; height: 102.0px;" /></a></td>
+<td><a class="reference internal" href="_images/icon06.png"><img alt="icon06" class="align-middle" src="_images/icon06.png" style="width: 114.0px; height: 102.0px;" /></a></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="_images/icon07.png"><img alt="icon07" class="align-middle" src="_images/icon07.png" style="width: 114.0px; height: 102.0px;" /></a></td>
+<td><a class="reference internal" href="_images/icon08.png"><img alt="icon08" class="align-middle" src="_images/icon08.png" style="width: 114.0px; height: 102.0px;" /></a></td>
+<td><a class="reference internal" href="_images/icon09.png"><img alt="icon09" class="align-middle" src="_images/icon09.png" style="width: 114.0px; height: 102.0px;" /></a></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="o">|</span><span class="n">icon01</span><span class="o">|</span> <span class="n">image</span><span class="p">::</span> <span class="n">image</span><span class="o">/</span><span class="n">icon</span><span class="o">/</span><span class="n">icon01</span><span class="o">.</span><span class="n">png</span>
+   <span class="p">:</span><span class="n">scale</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span>
+   <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">middle</span>
+<span class="o">..</span> <span class="o">|</span><span class="n">icon02</span><span class="o">|</span> <span class="n">image</span><span class="p">::</span> <span class="n">image</span><span class="o">/</span><span class="n">icon</span><span class="o">/</span><span class="n">icon02</span><span class="o">.</span><span class="n">png</span>
+   <span class="p">:</span><span class="n">scale</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span>
+   <span class="p">:</span><span class="n">align</span><span class="p">:</span> <span class="n">middle</span>
+<span class="o">...</span><span class="n">이하</span> <span class="n">반복</span><span class="o">...</span>
+<span class="o">+----------+----------+----------+</span>
+<span class="o">|</span> <span class="o">|</span><span class="n">icon01</span><span class="o">|</span> <span class="o">|</span> <span class="o">|</span><span class="n">icon02</span><span class="o">|</span> <span class="o">|</span> <span class="o">|</span><span class="n">icon03</span><span class="o">|</span> <span class="o">|</span>
+<span class="o">+----------+----------+----------+</span>
+<span class="o">|</span> <span class="o">|</span><span class="n">icon04</span><span class="o">|</span> <span class="o">|</span> <span class="o">|</span><span class="n">icon05</span><span class="o">|</span> <span class="o">|</span> <span class="o">|</span><span class="n">icon06</span><span class="o">|</span> <span class="o">|</span>
+<span class="o">+----------+----------+----------+</span>
+<span class="o">|</span> <span class="o">|</span><span class="n">icon07</span><span class="o">|</span> <span class="o">|</span> <span class="o">|</span><span class="n">icon08</span><span class="o">|</span> <span class="o">|</span> <span class="o">|</span><span class="n">icon09</span><span class="o">|</span> <span class="o">|</span>
+<span class="o">+----------+----------+----------+</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="box">
+<h2>07. 박스 Box<a class="headerlink" href="#box" title="Permalink to this headline">¶</a></h2>
+<p>알림이나 경고 박스를 생성.</p>
+<div class="section" id="see-also">
+<h3>참고 See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">..</span> <span class="pre">seealso::</span></code> 를 사용.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">참고용 내용을 작성할 때 사용.</p>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">seealso</span><span class="p">::</span> <span class="n">참고용</span> <span class="n">내용을</span> <span class="n">작성할</span> <span class="n">때</span> <span class="n">사용</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="note">
+<h3>노트 Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">..</span> <span class="pre">note::</span></code> 추가사항이나 첨부내용이 있을때 사용.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">필요한 내용을 추가할 때 사용.</p>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">note</span><span class="p">::</span> <span class="n">필요한</span> <span class="n">내용을</span> <span class="n">추가할</span> <span class="n">때</span> <span class="n">사용</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="warning">
+<h3>알림 Warning<a class="headerlink" href="#warning" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">..</span> <span class="pre">warning::</span></code> 주의사항을 적을때 사용.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">주의 사항을 알릴 때 사용.</p>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">warning</span><span class="p">::</span> <span class="n">필요한</span> <span class="n">내용을</span> <span class="n">추가할</span> <span class="n">때</span> <span class="n">사용</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="04_Theme.html" class="btn btn-neutral float-right" title="Theme" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="02_Module.html" class="btn btn-neutral" title="Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, JEC.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
